@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b77151b1da.js" crossorigin="anonymous"></script>
+    <title>Demande de Devis - Frédéric LUCY</title>
+</head>
+<body>
+<header>
+    <div class="header-logo">
+    <picture>
+        <a href="index.html#accueil">
+            <img src="img/logo_blanc.png" alt="Logo de Frédéric LUCY">
+          </a>
+    </picture>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="devis.html">Demander un Devis</a></li>
+        <li><a href="portfolio.html">Réalisations</a></li>  
+        <li><a href="a-propos.html">A Propos</a></li>       
+      </ul>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Demandez un devis</h2>
+            </div>
+            <input type="hidden" name="access_key" value="b2f6fd6d-20d5-4c00-89f3-d3df5a88774b">
+            <input type="text" name="name" placeholder="Votre Nom" class="contact-input" required>
+            <input type="email" name="email" placeholder="Votre adresse E-Mail" class="contact-input" required>
+            <textarea name="message" placeholder="Votre Projet" class="contact-input" required></textarea>
+            <button type="submit">Envoyer <img src="img/arrow_icon.png" alt="Icône flèche de validation"></button>
+        </form>
+        <div class="contact-right">
+            <h2>Frédéric LUCY Dessinateur - Métreur</h2>
+            <p>
+            Dessinateur Métreur indépendant avec plus de 10 ans d’expérience <br>
+            dans le bâtiment. Basé près de Rennes, j’interviens rapidement <br>
+            pour vous accompagner dans vos projets de construction ou de rénovation<br>
+            Plans précis, métrés rigoureux et réactivité : faites<br>
+            confiance à un professionnel indépendant engagé à vos côtés.  
+            </p>
+
+            <div class="carte-visite">
+              <img src="img/selfie.jpg" alt="Frédéric Lucy" class="carte-photo">
+              <div class="carte-info">
+                <h3>Frédéric Lucy</h3>
+                <p>Dessinateur & Métreur</p>
+                <p><i class="fas fa-envelope"></i> flucy@dessinateur-metreur.fr</p>
+                <p><i class="fas fa-phone"></i> 06 64 45 99 74</p>
+                <p>
+                  Membre de la 
+                  <a href="https://www.fdi-nationale.fr/page/2413909-nous-decouvrir" target="_blank" rel="noopener noreferrer">FNDI</a>.
+                </p>                
+              </div>
+            </div>
+        </div>
+    </div>
+<footer>
+    <div class="footer-link">
+      <p>
+      <a href="mentions.html" class="footer-link">Mentions légales</a>
+      </p>
+  </div>
+  <p>Frédéric LUCY – Tous droits réservés</p>
+  <p>Powered by DEPLHES INT 2025</p>
+</footer>
+</body>
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

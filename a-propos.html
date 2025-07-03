@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b77151b1da.js" crossorigin="anonymous"></script>
+    <title>A Propos - Frédéric LUCY</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <picture>
+                <a href="index.html#accueil">
+                    <img src="img/logo_blanc.png" alt="Logo de Frédéric LUCY">
+                  </a>
+            </picture>
+            </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="devis.html">Demander un Devis</a></li>
+            <li><a href="portfolio.html">Réalisations</a></li>  
+            <li><a href="a-propos.html">A Propos</a></li>        
+          </ul>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+    </header>
+      
+    <div class="a-propos-container">
+      <section class="a-propos">
+        <div class="a-propos-bulle">
+          <img src="img/selfie.jpg" alt="Portrait du praticien" />
+        </div>
+        <div class="a-propos-texte">
+          <h2>À propos</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae erat luctus, ultrices elit venenatis, tristique ante. Vivamus in feugiat felis. Vestibulum a massa sed sem finibus sodales. Integer vel purus a metus mattis efficitur. Praesent et pharetra lacus. Proin posuere massa eu odio ullamcorper, pellentesque luctus ante tempus. Vivamus auctor lectus nulla, sit amet bibendum mi mollis ut. Praesent euismod ex a interdum hendrerit.
+
+            Nam vitae aliquet mi, posuere pharetra purus. Proin imperdiet justo semper massa feugiat, id pellentesque justo facilisis. Vestibulum bibendum vestibulum ex ac hendrerit. Duis turpis odio, faucibus eu tellus eget, porttitor eleifend sem. Sed eu enim pharetra, consequat odio quis, consequat urna. Donec urna nulla, volutpat sed euismod a, euismod at dolor. Aenean sed nibh eu purus lacinia maximus. Aenean sit amet tempor nisl. Nam consectetur ultrices augue, ut pharetra sem tempor at. In efficitur semper turpis sed bibendum.
+          </p>
+          <p>
+            Fusce molestie id dui vitae hendrerit. Integer placerat metus vitae mi commodo mattis. Nunc quis nulla vel purus vehicula bibendum. Nulla a nibh tincidunt, ultricies libero quis, tempor felis. In consectetur, metus quis laoreet aliquam, lectus lectus rhoncus mauris, in dignissim felis dui nec ante. Proin massa ipsum, imperdiet eleifend mollis nec, hendrerit at magna. Aliquam posuere ex non urna lacinia iaculis. Ut quis imperdiet purus. Maecenas suscipit est a velit iaculis, non cursus ex sollicitudin. Cras ultricies finibus nibh, eu tempor lacus efficitur a. Sed quis congue elit, eu semper erat.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+        <div class="footer-link">
+            <p>
+            <a href="mentions.html" class="footer-link">Mentions légales</a>
+            </p>
+        </div>
+        <p>Frédéric LUCY – Tous droits réservés</p>
+        <p>Powered by DEPLHES INT 2025</p>
+    </footer>
+</body>
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

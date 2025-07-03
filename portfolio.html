@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b77151b1da.js" crossorigin="anonymous"></script>
+    <title>Réalisations - Frédéric LUCY</title>
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <picture>
+        <a href="index.html#accueil">
+          <img src="img/logo_blanc.png" alt="Logo de Frédéric LUCY">
+        </a>
+      </picture>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="devis.html">Demander un Devis</a></li>
+          <li><a href="portfolio.html">Réalisations</a></li>  
+          <li><a href="a-propos.html">A Propos</a></li>       
+        </ul>
+
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+  </header>
+
+  <div class="back">
+    <div class="portfolio-container">
+      <div class="card card_small" style="background-image: url('img/maison_projet.jpg');">
+        <div class="card-overlay">
+          <span>Maison Project</span>
+        </div>
+      </div>
+      <div class="card card_medium" style="background-image: url('img/villa.jpg');">
+        <div class="card-overlay">
+          <span>Villa</span>
+        </div>
+      </div>
+      <div class="card card_large" style="background-image: url('img/tunnel.jpg');">
+        <div class="card-overlay">
+          <span>Tunnel</span>
+        </div>
+      </div>
+      <div class="card card_small" style="background-image: url('img/Perspective.png');">
+        <div class="card-overlay">
+          <span>Perspective</span>
+        </div>
+      </div>
+      <div class="card card_medium" style="background-image: url('img/Vue_3D.jpg');">
+        <div class="card-overlay">
+          <span>Vue 3D</span>
+        </div>
+      </div>
+      <div class="card card_large" style="background-image: url('img/architect.jpg');">
+        <div class="card-overlay">
+          <span>Cours Intérieur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-link">
+      <p>
+      <a href="mentions.html" class="footer-link">Mentions légales</a>
+      </p>
+    </div>
+    <p>Frédéric LUCY – Tous droits réservés</p>
+    <p>Powered by DEPLHES INT 2025</p>
+  </footer>
+</body>
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    navLinks.classList.toggle('active');
+  });
+</script>
+</html>

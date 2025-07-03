@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b77151b1da.js" crossorigin="anonymous"></script>
+    <title>Frédéric LUCY - Dessinateur Métreur</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+        <picture>
+          <img src="img/logo_blanc.png" alt="Logo de Frédéric LUCY">
+        </picture>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="devis.html">Demander un Devis</a></li>
+            <li><a href="portfolio.html">Réalisations</a></li>  
+            <li><a href="a-propos.html">A Propos</a></li>        
+          </ul>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+
+    <div class="slider">
+        <div class="slide current">
+            <a href="devis.html" class="fixed-button">Demander un Devis</a>
+            <div class="content">
+                <h1>Slide 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat nulla sit amet libero hendrerit, hendrerit laoreet sem sodales. Curabitur orci lectus, finibus quis erat quis, faucibus pellentesque eros.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <a href="devis.html" class="fixed-button">Demander un Devis</a>
+            <div class="content">
+                <h1>Slide 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat nulla sit amet libero hendrerit, hendrerit laoreet sem sodales. Curabitur orci lectus, finibus quis erat quis, faucibus pellentesque eros.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <a href="devis.html" class="fixed-button">Demander un Devis</a>
+            <div class="content">
+                <h1>Slide 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat nulla sit amet libero hendrerit, hendrerit laoreet sem sodales. Curabitur orci lectus, finibus quis erat quis, faucibus pellentesque eros.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <footer>
+        <div class="footer-link">
+            <p>
+            <a href="mentions.html" class="footer-link">Mentions légales</a>
+            </p>
+        </div>
+        <p>Frédéric LUCY – Tous droits réservés</p>
+        <p>Powered by DEPLHES INT 2025</p>
+    </footer>
+    <script src="main.js"></script>  
+</body>
+<script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.querySelector('.nav-links');
+  
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      navLinks.classList.toggle('active');
+    });
+</script>
+</html>

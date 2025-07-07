@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dessinateur-metreur.fr/sitemap.xml

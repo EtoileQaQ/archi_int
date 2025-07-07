@@ -9,14 +9,21 @@
   </url>
 
   <url>
-    <loc>https://dessinateur-metreur.fr/portfolio.html</loc>
+    <loc>https://dessinateur-metreur.fr/devis.html</loc>
     <lastmod>2025-06-30</lastmod>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://dessinateur-metreur.fr/devis.html</loc>
+    <loc>https://dessinateur-metreur.fr/portfolio.html</loc>
+    <lastmod>2025-06-30</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://dessinateur-metreur.fr/a-propos.html</loc>
     <lastmod>2025-06-30</lastmod>
     <priority>0.70</priority>
     <changefreq>monthly</changefreq>

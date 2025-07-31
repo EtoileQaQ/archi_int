@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frédéric Lucy — Dessinateur Métreur</title>
+  <link rel="stylesheet" href="css/style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+   <div class="hero">
+        <div class="container">
+          <div class="side-description">
+            Plans techniques pour permis de construire
+          </div>
+          <h1 class="name">Frédéric LUCY</h1>
+          <p class="tagline">Dessinateur - Métreur indépendant basé en Bretagne</p>
+        </div>
+        <div class="side-description-2">
+            métrés détaillés pour vos projets en neuf ou rénovation.
+        </div>
+        <img src="img/villa.jpg" alt="villa de démonstration" class="hero-image">
+    </div>
+    <section class="presentation">
+        <div class="presentation-container">
+          <h2 class="section-title">Expertise technique & précision</h2>
+          <p class="section-text">
+            Fort d'une expérience dans le dessin de plans techniques, je vous accompagne dans la réalisation de vos projets de construction ou de rénovation. Chaque plan est réalisé avec soin, dans le respect des normes en vigueur.
+          </p>
+        </div>
+        <img src="img/tunnel.jpg" alt="villa de démonstration" class="presentation-image">
+    </section>
+    <section class="realisation">
+      <div class="realisation-container">
+          <h2 class="realisation-title">Que vous soyez professionnel ou particulier</h2>
+          <p class="realisation-text">
+              Que votre projet concerne une nouvelle construction, une extension ou une rénovation...<br>
+              Où vous êtes momentanément en surcharge de travail.<br>
+              je saurais répondre à vos besoins
+          </p>
+      </div>
+      <div class="back">
+        <div class="portfolio-container">
+          <div class="card card_small" style="background-image: url('img/maison_projet.jpg');">
+            <div class="card-overlay">
+              <span>Maison Project</span>
+            </div>
+          </div>
+          <div class="card card_medium" style="background-image: url('img/villa.jpg');">
+            <div class="card-overlay">
+              <span>Villa</span>
+            </div>
+          </div>
+          <div class="card card_large" style="background-image: url('img/tunnel.jpg');">
+            <div class="card-overlay">
+              <span>Tunnel</span>
+            </div>
+          </div>
+          <div class="card card_small" style="background-image: url('img/Perspective.png');">
+            <div class="card-overlay">
+              <span>Perspective</span>
+            </div>
+          </div>
+          <div class="card card_medium" style="background-image: url('img/Vue_3D.jpg');">
+            <div class="card-overlay">
+              <span>Vue 3D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+    
+
+
+            <section class="contact">
+              <div class="contact-container">
+                <h2 class="contact-title">Me contacter</h2>
+                <form action="https://formspree.io/f/TON_ID" method="POST" class="contact-form">
+                  <label>
+                    Nom
+                    <input type="text" name="name" required>
+                  </label>
+                  <label>
+                    Email
+                    <input type="email" name="email" required>
+                  </label>
+                  <label>
+                    Message
+                    <textarea name="message" rows="6" required></textarea>
+                  </label>
+                  <button type="submit">Envoyer</button>
+                </form>
+              </div>
+            </section>            
+          
+  </main>
+  <script>
+    window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    // Réduction de l’image dans la section hero
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        let scale = 1 - scrollY / 1000;
+        scale = Math.max(0.5, scale);
+        heroImage.style.transform = `scale(${scale})`;
+    }
+
+    // Agrandissement de l’image dans la section présentation
+    const presentationImage = document.querySelector('.presentation-image');
+    if (presentationImage) {
+        let scale = 1 + scrollY / 1000;
+        scale = Math.min(1.25, scale);
+        presentationImage.style.transform = `scale(${scale})`;
+    }
+
+    // Activation du mode light pour la section hero
+    const hero = document.querySelector('.hero');
+    if (hero) {
+        if (scrollY > 100) {
+        hero.classList.add('light-mode');
+        } else {
+        hero.classList.remove('light-mode');
+        }
+    }
+    });
+  </script>
+  
+  
+</body>
+</html>
